@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        #keyboard {
+            margin: 5px;
+        }
+
+        .grid-container {
+            display: grid;
+            background-color: aqua;
+
+        }
+
+        .kb-row {
+            /* display: flex; */
+            width: 100%;
+            justify-content: left !important;
+            /* margin: 10px 0; */
+
+            /* background-color: red; */
+        }
+
+        .kb-row .btn {
+            /* width: 40px; */
+            height: 50px;
+            min-width: 48px;
+            max-width: 50px;
+            margin: 3px !important;
+            text-align: center;
+            font-size: 15px;
+            padding: 2px !important;
+
+        }
+
+        .kb-row .btn1 {
+            width: 96px;
+            height: 50px;
+            min-width: 106px;
+            margin: 3px !important;
+            text-align: center;
+            font-size: 15px;
+            padding: 2px !important;
+
+        }
+
+        .kb-row .btn2 {
+            height: 50px;
+            min-width: 140px;
+            margin: 3px !important;
+            text-align: center;
+            font-size: 15px;
+            padding: 2px !important;
+
+        }
+
+        .kb-row .btn3 {
+            height: 50px;
+            min-width: 70px;
+            margin: 3px !important;
+            text-align: center;
+            font-size: 15px;
+            padding: 2px !important;
+
+
+        }
+
+        .kb-row .btn4 {
+            height: 50px;
+            min-width: 275px;
+            margin: 3px !important;
+            text-align: center;
+            font-size: 15px;
+            padding: 2px !important;
+
+        }
+
+        .btn:hover {
+            background-color: #D3D3D3;
+            border: none;
+        }
+
+        .btn1:hover {
+            background-color: #D3D3D3;
+            border: none;
+        }
+
+        .btn2:hover {
+            background-color: #D3D3D3;
+            border: none;
+
+        }
+
+        .btn3:hover {
+            background-color: #D3D3D3;
+            border: none;
+
+        }
+
+        .btn4:hover {
+            background-color: #D3D3D3;
+            border: none;
+
+        }
+
+
+
+        .kb-row1 {
+            /* display: flex; */
+            width: 100%;
+            justify-content: left !important;
+            /* margin: 10px 0; */
+            /* background-color: red; */
+        }
+
+        .kb-row1 .btn {
+            width: 70px;
+            height: 50px;
+            min-width: 70px;
+            max-width: 50px;
+            margin: 3px !important;
+            text-align: center;
+            font-size: 15px;
+            padding: 2px !important;
+        }
+
+        .row {
+            /* background-color: gray; */
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .kb-row .btn-wide {
+            width: 20px;
+            min-width: 13vw !important;
+            max-width: 13vw !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <section id="keyboard">
+        <!-- <div class="grid-container"> -->
+
+        <div class="row">
+            <div class="col-8">
+                <div class="kb-row">
+
+                    <button class="btn btn-dark" type="button">ESC</button>
+                    <button class="btn btn-dark" type="button">~</button>
+                    <button class="btn btn-dark" type="button">1</button>
+                    <button class="btn btn-dark" type="button">2</button>
+                    <button class="btn btn-dark" type="button">3</button>
+                    <button class="btn btn-dark" type="button">4</button>
+                    <button class="btn btn-dark" type="button">5</button>
+                    <button class="btn btn-dark" type="button">6</button>
+                    <button class="btn btn-dark" type="button">7</button>
+                    <button class="btn btn-dark" type="button">8</button>
+                    <button class="btn btn-dark" type="button">9</button>
+                    <button class="btn btn-dark" type="button">0</button>
+                    <button class="btn btn-dark" type="button">-</button>
+                    <button class="btn btn-dark" type="button">=</button>
+                    <button class="btn btn-dark" type="button"><i class="fa-solid fa-arrow-left"></i></button>
+                    <!-- </div> -->
+
+                </div>
+                <div class="kb-row">
+
+                    <button class="btn btn-dark" type="button">Tab</button>
+                    <button class="btn btn-dark" type="button">q</button>
+                    <button class="btn btn-dark" type="button">w</button>
+                    <button class="btn btn-dark" type="button">e</button>
+                    <button class="btn btn-dark" type="button">r</button>
+                    <button class="btn btn-dark" type="button">t</button>
+                    <button class="btn btn-dark" type="button">y</button>
+                    <button class="btn btn-dark" type="button">u</button>
+                    <button class="btn btn-dark" type="button">i</button>
+                    <button class="btn btn-dark" type="button">o</button>
+                    <button class="btn btn-dark" type="button">p</button>
+                    <button class="btn btn-dark" type="button">[</button>
+                    <button class="btn btn-dark" type="button">]</button>
+                    <button class="btn btn-dark" type="button">\</button>
+                    <button class="btn btn-dark" type="button">Del</button>
+                    <!-- </div> -->
+
+                </div>
+                <div class="kb-row">
+                    <button class="btn1 btn-dark" type="button">Caps</button>
+                    <button class="btn btn-dark" type="button">a</button>
+                    <button class="btn btn-dark" type="button">s</button>
+                    <button class="btn btn-dark" type="button">d</button>
+                    <button class="btn btn-dark" type="button">f</button>
+                    <button class="btn btn-dark" type="button">g</button>
+                    <button class="btn btn-dark" type="button">h</button>
+                    <button class="btn btn-dark" type="button">j</button>
+                    <button class="btn btn-dark" type="button">k</button>
+                    <button class="btn btn-dark" type="button">l</button>
+                    <button class="btn btn-dark" type="button">;</button>
+                    <button class="btn btn-dark" type="button">,</button>
+                    <button class="btn1 btn-dark" type="button">Enter</button>
+                </div>
+                <div class="kb-row">
+                    <button class="btn2 btn-dark" type="button">Shift</button>
+                    <button class="btn btn-dark" type="button">z</button>
+                    <button class="btn btn-dark" type="button">x</button>
+                    <button class="btn btn-dark" type="button">c</button>
+                    <button class="btn btn-dark" type="button">v</button>
+                    <button class="btn btn-dark" type="button">b</button>
+                    <button class="btn btn-dark" type="button">n</button>
+                    <button class="btn btn-dark" type="button">m</button>
+                    <button class="btn btn-dark" type="button">,</button>
+                    <button class="btn btn-dark" type="button">.</button>
+                    <button class="btn btn-dark" type="button">/</button>
+                    <button class="btn btn-dark" type="button">^</button>
+                    <button class="btn3 btn-dark" type="button">Shift</button>
+                </div>
+                <div class="kb-row">
+                    <button class="btn btn-dark" type="button">Fn</button>
+                    <button class="btn btn-dark" type="button">Ctrl</button>
+                    <button class="btn btn-dark" type="button">window</button>
+                    <button class="btn btn-dark" type="button">ALt</button>
+                    <button class="btn4 btn-dark" type="button"> space </button>
+                    <button class="btn btn-dark" type="button">Alt</button>
+                    <button class="btn btn-dark" type="button">Ctrl</button>
+                    <button class="btn btn-dark" type="button">
+                        <i class="fa-solid fa-chevron-left"></i></button>
+                    <button class="btn btn-dark" type="button"><i class="fa-solid fa-chevron-down"></i></button>
+                    <button class="btn btn-dark" type="button">></button>
+                    <button class="btn btn-dark" type="button">PtrScr</button>
+
+                </div>
+
+            </div>
+            <div class="col-4">
+                <div class="kb-row1">
+
+                    <button class="btn btn-dark" type="button">Home</button>
+                    <button class="btn btn-dark" type="button">PgUp</button>
+                    <button class="btn btn-dark" type="button">Nav</button>
+
+                </div>
+                <div class="kb-row1">
+
+                    <button class="btn btn-dark" type="button">End</button>
+                    <button class="btn btn-dark" type="button">PgDn</button>
+                    <button class="btn btn-dark" type="button">Mv Up</button>
+
+                </div>
+                <div class="kb-row1">
+
+                    <button class="btn btn-dark" type="button">Insert</button>
+                    <button class="btn btn-dark" type="button">Pause</button>
+                    <button class="btn btn-dark" type="button">Mv Dn</button>
+
+                </div>
+                <div class="kb-row1">
+
+                    <button class="btn btn-dark" type="button">PrtScn</button>
+                    <button class="btn btn-dark" type="button">ScrLk</button>
+                    <button class="btn btn-dark" type="button" disabled>Dock</button>
+
+                </div>
+                <div class="kb-row1">
+
+                    <button class="btn btn-dark" type="button">Options</button>
+                    <button class="btn btn-dark" type="button">Help</button>
+                    <button class="btn btn-dark" type="button">Fade</button>
+
+                </div>
+            </div>
+            <!-- </div> -->
+        </div>
+
+    </section>
+    </div>
+
+</body>
+
+</html>

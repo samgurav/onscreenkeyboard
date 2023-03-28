@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+    </link>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <title>Document</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            padding: 10px;
+            background-color:  white;
+            column-gap: 10px;
+        }
+
+        .grid-item {
+            background-color: white;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            font-size: 30px;
+            text-align: center;
+        }
+
+        input[type=text]:focus {
+            background-color: #fff;
+            border-bottom: 2px solid #5fbae9;
+        }
+
+        .boxes {
+            border: 1px solid grey;
+            margin: 20px;
+            background-color: white;
+
+        }
+
+        .wrapper {
+            margin-top: 50px;
+            background-color:   #e0ebeb;
+        }
+        .booked-slots{
+            background-color:  #ff6666;
+            
+        }
+        .available-slots{
+            background-color:    #339933;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container wrapper">
+        <div class="row">
+            <div class="col mt-5">
+                <div class="grid-container">
+                    <div class="grid-item booked-slots">1</div>
+                    <div class="grid-item available-slots">2</div>
+                    <div class="grid-item  available-slots">3</div>
+                    <div class="grid-item  available-slots">4</div>
+                    <div class="grid-item  available-slots">5</div>
+
+                </div>
+                <div class="grid-container">
+                    <div class="grid-item  available-slots">6</div>
+                    <div class="grid-item  available-slots">7</div>
+                    <div class="grid-item  available-slots">8</div>
+                    <div class="grid-item  available-slots">9</div>
+                    <div class="grid-item  available-slots">10</div>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="row p-2">
+            <div class="col  boxes">
+                <div class="container">
+                    <div class="jumbotron pt-3">
+                        <h3>Parking Charges</h3>
+                        <p>First 4 hrs - 200INR</p>
+                        <p>First 4 hrs - 200INR</p>
+                        <p>First 4 hrs - 200INR</p>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col boxes">
+                <div class="container">
+                    <div class="jumbotron pt-3">
+                        <h3>Slot Details</h3>
+                        <p>Slot : 0</p>
+                        <form>
+                            <div class="form-group row">
+                                <label for="staticEmail" class="col-sm-4 col-form-label">Duration</label>
+                                <div class="col-sm-6">
+                                    <input type="text" class="form-control-plaintext" placeholder="Amount"
+                                        value="0">
+                                </div>
+                                <div class="col-sm-2">
+                                    Hours
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="col boxes">
+                <div class="container">
+                    <div class="jumbotron pt-3">
+                        <h3>Payment Details</h3>
+                        <p>Amount: 0 INR</p>
+                        <a href="#" class="btn btn-info btn-lg">Book your Slot</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
